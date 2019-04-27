@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../stylish/gooey.css";
+import "../stylish/primary.css";
 import "../stylish/pictos.css"
 import "../stylish/boxes.css"
 import "../stylish/portfolio.css"

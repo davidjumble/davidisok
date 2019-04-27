@@ -28,6 +28,30 @@ class Pictograms extends Component {
 
   }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.resizeHeaderOnScroll);
+  }
+
+  resizeHeaderOnScroll() {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 200,
+      headerEl = document.getElementById("menu");
+
+    if (distanceY > shrinkOn) {
+      headerEl.classList.add("smaller");
+    } else {
+      headerEl.classList.remove("smaller");
+    }
+
+    let burger = document.getElementById("burger");
+
+    if (distanceY > shrinkOn) {
+      burger.classList.add("visible");
+    } else {
+      burger.classList.remove("visible");
+    }
+  }
+
   change(picto) {
     this.state[picto] === '' ?
       this.setState({ [picto]: 'changed', openPortfolio: picto }) :
@@ -40,54 +64,62 @@ class Pictograms extends Component {
 
     return (
       <div>
-
-        < section className='all-pictos' >
-
-          <div className="about-box height" onClick={() => { this.change('about') }} >
-            <About about={this.state.about} />
+        <div className='burger' id='burger'></div>
+        <div className='burger-bar'></div>
+        <div className='menu' id="menu">
+          <div className='bbc'  >
+            <hr className="line-1"></hr>
+            <header className='bbc-type-1' >INFORM ,  EDUCATE AND ENTERTAIN</header>
+            <header className='bbc-type-2'>ANNNND. HIRE DAVID PARKINSON</header>
+            <hr className="line-2"></hr>
           </div>
 
-          <div className="eye-box height" onClick={() => { this.change('eye') }} >
-            <Eye eye={this.state.eye} />
-          </div>
-
-          <div className="choirs-box height" onClick={() => { this.change('choirs') }} >
-            <Choirs eye={this.state.eye} />
-          </div>
-
-          <div className="english-box height" onClick={() => { this.change('english') }} >
-            <English english={this.state.english} />
-          </div>
-
-          <div className="jam-box height" onClick={() => { this.change('jam') }} >
-            <Jam jam={this.state.jam} />
-          </div>
-
-          <div className="ears-box height" onClick={() => { this.change('ears') }} >
-            <Ears ears={this.state.ears} />
-          </div>
-
-          <div className="free-box height" onClick={() => { this.change('free') }} >
-            <Free free={this.state.free} />
-          </div>
-
-          <div className="books-box height" onClick={() => { this.change('books') }} >
-            <Books books={this.state.books} />
-          </div>
-
-          <div className="gooey-box height" onClick={() => { this.change('gooey') }} >
-            <Gooey gooey={this.state.gooey} />
-          </div>
-
-          <div className="planets-box height" onClick={() => { this.change('planets') }} >
-            <Planets planets={this.state.planets} />
-          </div>
+          < section className='all-pictos' id="picto-box" >
 
 
+            <div className="about-box height red" onClick={() => { this.change('about') }} >
+              <About about={this.state.about} />
+            </div>
+
+            <div className="eye-box height green" onClick={() => { this.change('eye') }} >
+              <Eye eye={this.state.eye} />
+            </div>
+
+            <div className="choirs-box height red" onClick={() => { this.change('choirs') }} >
+              <Choirs eye={this.state.eye} />
+            </div>
+
+            <div className="english-box height red" onClick={() => { this.change('english') }} >
+              <English english={this.state.english} />
+            </div>
+
+            <div className="jam-box height red" onClick={() => { this.change('jam') }} >
+              <Jam jam={this.state.jam} />
+            </div>
+
+            <div className="ears-box height red" onClick={() => { this.change('ears') }} >
+              <Ears ears={this.state.ears} />
+            </div>
+
+            <div className="free-box height red" onClick={() => { this.change('free') }} >
+              <Free free={this.state.free} />
+            </div>
+
+            <div className="books-box height red" onClick={() => { this.change('books') }} >
+              <Books books={this.state.books} />
+            </div>
+
+            <div className="gooey-box height red" onClick={() => { this.change('gooey') }} >
+              <Gooey gooey={this.state.gooey} />
+            </div>
+
+            <div className="planets-box height red" onClick={() => { this.change('planets') }} >
+              <Planets planets={this.state.planets} />
+            </div>
+          </section>
+        </div>
 
 
-
-        </section>
         <Portfolio openWork={this.state.openPortfolio} />
       </div>
     );

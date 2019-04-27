@@ -7,14 +7,26 @@
 }
 
 .all-pictos {
-  top: 20px;
-  display:block;
+
+  top: 5%;
+left:'';
   width: 500px;
   position: relative;
   margin: 0 auto;
   height: 250px;
   box-sizing: border-box;
+
   /* border: 3px solid coral; */
+}
+
+.all-pictos.smaller{
+  left:50%;
+  margin: 0 auto;
+  width:50px;
+  height: 50px;
+  transition:left 1s;
+  transition: height 0.3s;
+  transition: width 0.3s;
 }
 
 

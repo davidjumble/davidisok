@@ -1,0 +1,125 @@
+/* * {
+  border: 1px solid coral;
+} */
+
+.menu{
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  width: 500px;
+  margin: 0 auto;
+  height: 380px;
+  box-sizing: border-box;
+  transition: width 0.3s,height 0.3s,opacity 0.3s;
+  
+  background-color: rgb(247, 210, 88);
+  opacity: 1;
+}
+
+.menu.smaller {
+  width: 100px;
+  height: 100px;
+  opacity:0;
+}
+
+.burger{
+  height: 100px;
+  width:100px;
+  position:fixed;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-right: auto;
+  background-color: rgb(247, 210, 88);
+z-index: -1;
+}
+
+.burger.visible{
+  z-index: 3;
+}
+
+.burger-bar{
+  height: 100px;
+  width:100%;
+  position:fixed;
+  background-color: rgb(247, 210, 88);
+
+}
+
+.line-1 {
+  position: relative;
+  top:4%;
+  height:4px;
+   border:none; 
+   color:#000;
+    background-color:#000; 
+    width:93%; 
+    text-align:center;
+     margin: 0 auto ;
+}
+
+.line-2 {
+  position: relative;
+  top:16%;
+  height:4px;
+   border:none; 
+   color:#000;
+    background-color:#000; 
+    width:93%; 
+    text-align:center;
+     margin: 0 auto ;
+}
+
+.bbc {
+font-family:futura;
+position: relative;
+line-height: 1.8;
+text-align: center;
+font-size: 24.2px;
+font-weight: 900;
+width: 100%;
+position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bbc-type-1{
+  position: relative; 
+  top:5%;
+  left:0%;
+}
+
+.bbc-type-2{
+  position: relative; 
+top:10%;
+left:0%;
+}
+
+#fade path {
+  -webkit-transition: fill 1s ease;
+  -moz-transition: fill 1s ease;
+  -o-transition: fill 1s ease;
+  transition: fill 1s ease;
+}
+
+body {
+  background-color: rgb(247, 210, 88);
+  margin: 0px;
+}
+
+path {
+  transition: d 1.8s;
+  will-change: d;
+}
+
+
+
+
+/* //original width and height 500 x 600 */
+
+.big-box {
+  display: block;
+}

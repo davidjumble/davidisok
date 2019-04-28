@@ -4,7 +4,7 @@
 }
 
 .red{
-  background-color: rgb(209, 105, 105);
+  background-color: rgb(209, 105, 204);
 }
 
 .green {
@@ -16,12 +16,12 @@
   position: absolute;
   left: 3%;
   width: 16.4%;
-
+  padding-left: 5px;
   top: 4%;
   transition: 1.8s;
   cursor: pointer;
   background-color: rgb(209, 105, 105);
-  border:3px solid rgb(65, 105, 138);
+  border:3px solid rgb(19, 20, 20);
 
 }
 
@@ -29,12 +29,12 @@
   position: absolute;
   left: 22.4%;
   width: 16.4%;
-
+padding:6px;
   top: 4%;
   transition: 1.8s;
   cursor: pointer;
   background-color: rgb(88, 185, 156);
-  border:3px solid rgb(65, 138, 70);
+  border:3px solid rgb(19, 20, 20);
   box-sizing: border-box;
 
 }
@@ -42,24 +42,24 @@
   position: absolute;
   left: 41.8%;
   width: 16.4%;
-
+padding:10px;
   top: 4%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:3px solid rgb(172, 90, 147);
+  background-color: rgb(187, 125, 173);
+  border:3px solid rgb(19, 20, 20);
 }
 
 .english-box {
   position: absolute;
   left: 61.2%;
   width: 16.4%;
-
+  padding: 6px;
   top: 4%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+  background-color: rgb(96, 149, 209);
+  border:3px solid rgb(19, 20, 20);
 }
 
 .jam-box {
@@ -69,8 +69,9 @@
   top: 4%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+  padding:6px;
+  border:3px solid rgb(19, 20, 20);
+  background-color: rgb(104, 190, 165);
 }
 
 .ears-box {
@@ -78,10 +79,12 @@
   left: 3%;
   width: 16.4%;
   top: 51%;
+  padding: 4px;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+  padding: 6px;
+  background-color: rgb(96, 149, 209);
+  border:3px solid rgb(19, 20, 20);
 }
 
 .free-box {
@@ -91,8 +94,9 @@
   top: 51%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+padding: 6px;
+background-color: rgb(187, 125, 173);
+  border:3px solid rgb(19, 20, 20);
 }
 .books-box {
   position: absolute;
@@ -101,8 +105,9 @@
   top: 51%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+  padding:6px;
+  border:3px solid rgb(19, 20, 20);
+  background-color: rgb(218, 116, 133);
 }
 
 .gooey-box {
@@ -112,8 +117,9 @@
   top: 51%;
   transition: 1.8s;
   cursor: pointer;
-
-  border:4px solid rgb(67, 113, 124)
+padding:6px;
+  border:3px solid rgb(19, 20, 20);
+  background-color: rgb(104, 190, 165);
 }
 
 .planets-box {
@@ -123,6 +129,7 @@
   top: 51%;
   transition: 1.8s;
   cursor: pointer;
-
-border:4px solid rgb(67, 113, 124)
+  padding:6px;
+  border:3px solid rgb(19, 20, 20);
+  background-color: rgb(187, 125, 173);
 }

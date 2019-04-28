@@ -1,26 +1,33 @@
 .portfolio-box{
-padding: 11px;
+position: relative;
+top:384px;
+width:100%;
+height: 1000px;
+background-color: rgb(47, 133, 190);
 text-align: center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: bold;
 text-align: center;
   margin: 0 auto;
+  z-index: 2;
+
 
 }
 
 .project{
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:  Futura,'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
   color:rgb(47, 133, 190);
   font-weight: 700;
   font-size:4em;
   text-align: center;
   margin: 0 auto;
+  padding-bottom:5px;
 }
 
 .project-name{
   line-height: 2.5;
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color:rgb(21, 36, 46);
+  font-family:   Futura,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(239, 243, 245);
   font-weight: 700;
   font-size:3em;
   text-align: center;
@@ -30,11 +37,39 @@ text-align: center;
 .blueline{
 
   margin:10px 0;
-  height:3px;
+  height: 5px;
    border:none; 
    color:#000;
     background-color:rgb(119, 178, 241); 
-    width:95%; 
+    width:100%; 
     text-align:center; 
     margin: 0 auto ;
+}
+
+.imagebox{
+  background-color: rgb(83, 142, 243);
+
+  margin-top:0px;
+  padding-bottom: 20px;
+}
+
+.tears-image{
+  width:50%;
+  max-width: 700px;
+}
+
+.project-info{
+width:50%;
+margin: 0 auto;
+padding-top: 120px;
+font-size:1.2em;
+
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(239, 243, 245);
+  font-size: 1.2em;
+  margin-bottom:20px;
+  padding:20px;
 }
